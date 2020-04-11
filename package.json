@@ -1,5 +1,5 @@
 {
-  "name": "errorwatch",
+  "name": "error-watch",
   "version": "1.0.0",
   "description": "前端错误解析",
   "main": "dist/errorWatch.js",

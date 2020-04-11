@@ -11,7 +11,7 @@
 ## 安装
 
 ```bash
-npm i errorWatch
+npm i error-watch
 ```
 
 ## 使用
@@ -19,7 +19,7 @@ npm i errorWatch
 - es6
 
 ```javaScript
-import ErrorWatch from 'errorWatch';
+import ErrorWatch from 'error-watch';
 
 /**
 * 错误监控回调函数
