@@ -2,13 +2,25 @@
   "name": "errorwatch",
   "version": "1.0.0",
   "description": "前端错误解析",
-  "main": "index.js",
+  "main": "dist/errorWatch.js",
   "module": "dist/errorWatch.esm.js",
+  "unpkg": "dist/errorWatch.min.js",
+  "jsdelivr": "dist/errorWatch.min.js",
   "scripts": {
     "test": "jest --color",
     "build": "rollup --config"
   },
   "author": "godis",
+  "keywords": [
+    "javascript",
+    "error",
+    "前端错误",
+    "错误监控"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Godiswill/errorWatch.git"
+  },
   "license": "MIT",
   "jest": {
     "testPathIgnorePatterns": [
