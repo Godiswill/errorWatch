@@ -151,6 +151,10 @@ Api.foo = function Api_foo() {
 const bar = function barFn() {
 };
 ```
+- Script error. 跨域脚本无法拿到错误信息。
+1. 跨源资源共享机制 `CORS` ：`Access-Control-Allow-Origin: Your-allow-origin`
+1. 脚本属性 `crossOrigin` ：`<script src="xxx.js" crossOrigin="anonymous"></script>`
+
 ## npm scripts
 
 - `npm run build` 根据 `rollup.config.js` 配置文件进行打包。
