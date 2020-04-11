@@ -5,9 +5,12 @@
 }(this, (function () { 'use strict';
 
   //Default options:
-  var collectWindowErrors = true;
-  var collectSourceErrors = true;
-  var linesOfContext = 11; // 5 lines before, the offending line, 5 lines after
+
+  var collectWindowErrors = true; // 是否通知 window 全局错误，开启，关掉了这个脚本就没意义了
+
+  var collectSourceErrors = true; // 是否在捕获阶段获取资源加载错误，默认开启
+
+  var linesOfContext = 11; // 5 lines before, the offending line, 5 lines after，没啥用
   var reportFuncName = 'ErrorWatch.report';
 
   /**
@@ -915,7 +918,7 @@
               name: e.target.src || e.target.href || e.target.currentSrc,
               stack: null
             };
-            handler(stack, false, e);
+            handler(stack, true, e);
           }
         } catch (e) {
           throw e;
