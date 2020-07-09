@@ -44,10 +44,12 @@ ErrorWatch.report.subscribe(receiveError);
 
 - 脚本直接引入
 
-```javascript
+```html
 <script src="./dist/errorWatch.min.js"></script>
 <scritp>
-ErrorWatch.report.subscribe(function() {...});
+ErrorWatch.report.subscribe(function() {
+	// code here
+});
 </script>
 ```
 
